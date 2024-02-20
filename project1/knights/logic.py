@@ -235,6 +235,7 @@ def model_check(knowledge, query):
         if not symbols:
 
             # If knowledge base is true in model, then query must also be true
+            
             if knowledge.evaluate(model):
                 return query.evaluate(model)
             return True
